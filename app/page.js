@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="bg-purple-100 h-screen">
-      <section className="grid grid-cols-2">
+      <section className="grid grid-cols-2 h-[50vh]">
         <div className="flex flex-col gap-4 items-center justify-center">
           <p className={`text-3xl text-black font-bold`}>The best URL shortener in the Market</p>
           <p className="px-14 text-center text-black">We are the most straightfoward URL Shortener in the world. Most of the url shorteners will track you or ask you to give your details for login. We understand your needs and hence we have created this URL shortener</p>
