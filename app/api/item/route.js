@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb'
 
 export function POST(request) {
-	const client = new MongoClient(`${process.env.MONGODB_URL}`)
+	const client = new MongoClient(`${process.env.MONGODB_URI}`)
 
 	return request.json()
 		.then((body) => {
