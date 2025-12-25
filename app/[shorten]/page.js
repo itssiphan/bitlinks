@@ -5,7 +5,7 @@ export default async function Page({ params }) {
   const { shorten } = await params
   console.log(shorten)
 
-  const client = new MongoClient(process.env.MONGODB_URL)
+  const client = new MongoClient(process.env.MONGODB_URI)
   await client.connect()
 
   const db = client.db('bitlinks')
